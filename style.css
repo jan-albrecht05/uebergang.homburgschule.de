@@ -122,6 +122,30 @@ li::before{
 a:hover{
     text-decoration: underline;
 }
+#footer{
+    height: 4rem;
+    background-color: var(--back);
+    display: flex;
+}
+#footer span{
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#footer span::before{
+    content: url(/img/login.png);
+    margin-top: .2rem;
+    width: 1.2rem;
+    height: auto;
+    display: inline-block;
+}
+#dialog{
+    margin-left: 90%;
+    margin-top: -6rem;
+    z-index: 5;
+}
 @media (max-width:600px) {
     #header{
         height: 3rem;
