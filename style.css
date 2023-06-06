@@ -28,25 +28,36 @@ img{
     z-index: 5;
     position: sticky;
     top: 0;
+    display: flex;
 }
 a{
     height: 100%;
 }
-#homeimg{
+#header a:first-child{
+    margin-right: auto;
+    display: inline-block;
+}
+#header img{
     height: 100%;
     width: auto;
 }
+.icon{
+    height: 80%;
+    width: auto;
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
 #tel{
-    margin-left: auto;
     width: max-content;
-    display: block;
-    margin-top: -3.3rem;
+    margin-top: 1.7rem;
+    margin-left: 1rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 120%;
+    color: var(--font);
 }
 #main{
     background-image: url(/img/sommerhof.png);
-    background-size: 110%;
+    background-size: 120%;
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 5rem;
@@ -74,6 +85,9 @@ a{
     border-radius: 15px;
     border: 2px solid var(--font);
     color: var(--back);
+}
+.block .icon img{
+    width: 5rem;
 }
 #info{
     width: 25%;
@@ -111,6 +125,7 @@ a:hover{
 @media (max-width:600px) {
     #header{
         height: 3rem;
+        padding: .5rem 0rem .5rem 1rem;
     }
     #header #tel{
         display: none;
@@ -129,10 +144,15 @@ a:hover{
         font-size: 120%;
         padding: 0;
     }
+    .block .icon img{
+        width: 3rem;
+        margin-bottom: .5rem;
+    }
     #info{
         width: 90%;
         margin-inline: auto;
         padding: .5rem;
+        margin-bottom: -2rem;
     }
     li{
         margin-left: .5rem;
