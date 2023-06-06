@@ -46,7 +46,7 @@ a{
 }
 #main{
     background-image: url(/img/sommerhof.png);
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 5rem;
@@ -60,7 +60,7 @@ a{
     margin-inline: auto;
     border: 2px solid var(--blue);
     padding: 1rem 2rem;
-    color: var(--font);
+    color: var(--back);
     font-size: 150%;
     border-radius: 10px;
     font-weight: bold;
@@ -73,6 +73,7 @@ a{
     font-size: 180%;
     border-radius: 15px;
     border: 2px solid var(--font);
+    color: var(--back);
 }
 #info{
     width: 25%;
