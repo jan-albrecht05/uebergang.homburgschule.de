@@ -1,0 +1,154 @@
+:root{
+    --back: #fff;
+    --font: #000;
+    --grey: #262626;
+    --blue: #da251c;
+}
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--back);
+    color: var(--font);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#header{
+    height: 5rem;
+    background-color: var(--back);
+    filter: drop-shadow(0px 0px 5px var(--grey));
+    padding: .5rem 2rem;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+a{
+    height: 100%;
+}
+#homeimg{
+    height: 100%;
+    width: auto;
+}
+#tel{
+    margin-left: auto;
+    width: max-content;
+    display: block;
+    margin-top: -3.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+#main{
+    background-image: url(/img/sommerhof.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#error{
+    margin-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #da251c90;
+    width: max-content;
+    margin-inline: auto;
+    border: 2px solid var(--blue);
+    padding: 1rem 2rem;
+    color: var(--font);
+    font-size: 150%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.block{
+    background-color: var(--blue);
+    width: max-content;
+    margin-inline: auto;
+    padding: .2rem 2rem;
+    font-size: 180%;
+    border-radius: 15px;
+    border: 2px solid var(--font);
+}
+#info{
+    width: 25%;
+    margin-inline: auto;
+    background-color: var(--back);
+    margin-top: 5rem;
+    padding: 1rem 5rem;
+    text-align: left;
+    border-radius: 15px;
+    border: 2px solid var(--font);
+}
+li{
+    list-style: none;
+}
+li::before{
+    content: "↪";
+}
+#mails{
+    margin-top: 5rem;
+}
+.mail{
+    width: max-content;
+    color: var(--font);
+    background-color: var(--blue);
+    padding: 1rem;
+    margin: .5rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media (max-width:600px) {
+    #header{
+        height: 3rem;
+    }
+    #header #tel{
+        display: none;
+    }
+    #main{
+        background-image: url(/img/sommerhof2.png);
+    }
+    #error{
+        width: 70%;
+        margin-inline: auto;
+        font-size: 120%;
+    }
+    .block{
+        width: 90%;
+        margin-inline: auto;
+        font-size: 120%;
+        padding: 0;
+    }
+    #info{
+        width: 90%;
+        margin-inline: auto;
+        padding: .5rem;
+    }
+    li{
+        margin-left: .5rem;
+    }
+    #mails{
+        margin-top: 2rem;
+        display: block;
+        width: 100%;
+    }
+    .mail{
+        width: 80%;
+        margin-inline: auto;
+        display: block;
+    }
+    .mail:nth-child(2){
+        margin-top: 32px;
+    }
+    .mail:last-child{
+        margin-top: 2rem;
+    }
+}
