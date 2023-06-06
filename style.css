@@ -2,7 +2,8 @@
     --back: #fff;
     --font: #000;
     --grey: #262626;
-    --blue: #da251c;
+    --blue: #00358b;
+    --blue2: #00358b90;
 }
 html{
     scrollbar-width: thin;
@@ -54,7 +55,7 @@ a{
 #error{
     margin-bottom: 2rem;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #da251c90;
+    background-color: var(--blue2);
     width: max-content;
     margin-inline: auto;
     border: 2px solid var(--blue);
