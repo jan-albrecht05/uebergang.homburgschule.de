@@ -96,7 +96,7 @@ li::before{
 }
 .mail{
     width: max-content;
-    color: var(--font);
+    color: var(--back);
     background-color: var(--blue);
     padding: 1rem;
     margin: .5rem;
