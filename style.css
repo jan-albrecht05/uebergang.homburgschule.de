@@ -47,6 +47,9 @@ a{
     margin-top: .5rem;
     margin-right: 1rem;
 }
+#header .icon{
+    display: none;
+}
 #tel{
     width: max-content;
     margin-top: 1.7rem;
@@ -154,6 +157,9 @@ a:hover{
     #header #tel{
         display: none;
     }
+    #header .icon{
+        display: block;
+    }
     #main{
         background-image: url(/img/sommerhof2.png);
     }
@@ -196,5 +202,10 @@ a:hover{
     }
     .mail:last-child{
         margin-top: 2rem;
+    }
+    #dialog{
+        margin-left: 35%;
+        width: 50%;
+        margin-top: -4rem;
     }
 }
