@@ -162,6 +162,7 @@ a:hover{
     }
     #main{
         background-image: url(/img/sommerhof2.png);
+        padding-bottom: 1rem;
     }
     #error{
         width: 70%;
@@ -207,5 +208,8 @@ a:hover{
         margin-left: 35%;
         width: 50%;
         margin-top: -4rem;
+    }
+    #footer{
+        height: 1rem;
     }
 }
